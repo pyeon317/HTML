@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{padding: 0; margin: 0;}
+        ul,li{list-style: none;}
+        img{max-width: 100%; height: auto;}/* max-width :100% <-최대 100$를 넘을 수 없다. */
+
+        .gnb-box{
+            text-align: center;
+            background-color: black;
+        }
+        .gnb > li{
+            display: inline-block;
+            height: 56px;
+        }
+        .gnb > li > a{
+            display: block;/* 너비, 높이 지정 */
+            color: white;
+            text-decoration: none;
+            padding: 20px 10px;
+            /* 이 상태면 마우스를 올릴 때마다 밑줄이 생기면서 화면이 움직인다. */
+            height: 60px;
+            box-sizing: border-box;
+
+            
+        }
+        .gnb > li > a:hover{
+            border-bottom: 3px solid white;
+        }
+        section{margin-top: 80px;}
+        .box{
+            width: 1000px;
+            margin: 0 auto;
+            
+        }
+        .box > a1{
+            border: 1px solid #777;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+       
+    <header class="gnb-box">
+        <nav >
+            <ul class="gnb">
+                   <li> <a href="#">메뉴</a></li>
+                   <li> <a href="#">메뉴</a></li>
+                   <li> <a href="#">메뉴</a></li>
+                   <li> <a href="#">메뉴</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <article class="box2">
+        <img src="img/PC_C1-Recovered.jpg">
+    </article>
+    
+    <section class="box3">
+        <div>
+             <h3>오늘의 발견</h3>
+                <div>
+                    qhsans
+                </div>
+            
+        </div>
+       
+       
+    </section>
+
+</body>
+</html>
