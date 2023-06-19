@@ -1,0 +1,32 @@
+@import url(reset.css);
+
+*{text-align: center; text-decoration-line: none;}
+
+
+.left{float: left;}
+.right{float: right;}
+
+header{overflow: hidden; height: 50px;}
+header > h2{position: absolute;}
+header .social{position: absolute; top: 15px; left: 15px; background-image: url(images/social.png); background-size: cover; overflow: hidden;}
+header .social .left:first-child{padding-left: 0;}
+header .social > li{width: 20px; height: 20px;}
+header .login {position: absolute; top: 15px; right: 15px;}
+header .login > li{padding-left: 10px;}
+
+.box1{margin-top: 50px; height: 50px;}
+.box1 > ul > a{ padding: 0 10px; color: #777;}
+
+.main{background-image: url(images/main.jpg); background-repeat: no-repeat; background-position: center; background-size: cover;}
+.main{border-top: 3px solid red; margin-top: 10px; height: 450px;}
+.main > div:first-child{font-size: 50px; font-weight: bolder; padding-top: 50px; color: #fff; letter-spacing: 10px;}
+.main > div{font-size: 30px; font-weight: bold; padding-top: 10px; color: #fff;}
+
+.list{margin-bottom: 100px;}
+.list > h2{border-bottom: 3px mediumpurple dashed;}
+.list > article{display: inline-block;}
+.list > article > h3{display: block;}
+
+
+
+footer{border-top: 1px solid #777; overflow: hidden; height: 50px; width: 100%;}
