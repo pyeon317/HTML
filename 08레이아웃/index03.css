@@ -1,0 +1,113 @@
+*{list-style: none; padding: 0; margin: 0;}
+
+header{
+    height: 50px; line-height: 50px;
+    border-top: 3px solid rgb(0, 214, 59);
+    border-bottom: 1px solid #777;
+    overflow: hidden;
+}
+
+header .hat{max-width: 1008px; margin: 0 auto;}
+header .hat .right{margin-left: 10px;}
+
+.left{float: left;}
+.right{float: right;}
+
+.middle{border-bottom: 1px solid #777; height: 150px;}
+
+.middle .box{max-width: 1008px; margin: 0 auto; display: block;}
+
+#mid .right{margin-top: 10px;}
+
+.search_box{
+    width: 260px; height: 50px; padding-left: 10px;
+    margin-left: 10px; margin-top: 36px;
+    background-image: url(img_melon/melon_search.png); 
+    background-repeat: no-repeat; border: none;
+}
+
+#search{
+    width: 200px; height: 28px;
+    margin: 5px;
+}
+
+#search_btn{width:47px; height: 40px; background-image: url(img_melon/melon_btn.png); background-repeat: no-repeat; background-color: white; border: none;}
+
+.middle .menu{
+    width: 100%;
+    display: inline-block; padding-top: 10px;
+    font-weight: bolder;
+}
+.middle li:nth-child(2){padding-left: 20px;}
+.middle li:nth-child(3){padding-left: 20px;}
+.middle li:nth-child(4){padding-left: 20px;}
+.middle li:nth-child(5){padding-left: 20px;}
+.middle li:nth-child(6){padding-left: 20px;}
+.middle li:nth-child(7){padding-left: 20px;}
+.middle li:nth-child(8){padding-left: 20px;}
+.middle li:nth-child(9){padding-left: 20px;}
+
+section .wrap {width: 1008px; margin: 0 auto; }
+
+section .content {overflow: hidden;}
+section .content .list-wrap {width: 480px; float: left;}
+section .content .slide-wrap {width: 236px; float: left;}
+section .content .user-wrap {width: 280px; float: left;}
+
+/* 이미지의 가수명 영역 */
+.list-wrap ul {overflow: hidden;}
+.list-wrap ul li{float: left;width: 33.3333%; position: relative;}
+.list-wrap ul li a {position: relative;}
+.list-wrap ul li a .singer{
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    width: 100%;
+    color: #fff;
+    background-color: black;
+    text-align: center;
+    font-size: 11px;
+    height: 22px;
+    line-height: 22px;
+    opacity: 0.7;
+}
+.list-wrap ul li .hover_cont{/* 앱솔루트로 위치 겹치게 한다음 hover로 마우스 올릴때만 나타나도록 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 155px;
+    height: 155px;
+    
+    background-color: black;
+    opacity: 0; /* 호버가 닿으면 1로 변경 */
+    z-index: 10;/* 가장 위 */
+
+    transition: opacity .5s ease-in-out;
+}
+/* 호버 */
+.list-wrap ul li:hover > .hover_cont{/* li를 호버하면  자식 태그인 .hover_cont의 투명도를 변경 */
+    opacity: 1;
+}
+.list-wrap ul li .hover_cont a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+
+    display: inline-block;
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+}
+
+
+/*  */
+.slide-wrap{margin-left: 4px;}
+
+.user-wrap{margin-left: 4px;}
+.user-wrap > .login-wrap{
+    border: 1px solid #ddd;    
+}
+.user-wrap > .promotion-wrap{
+    margin-top: 8px;    
+}
