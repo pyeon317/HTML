@@ -1,0 +1,24 @@
+@import url(reset.css); /* 공통부분 매번 적기 귀찮아서 파일 따로 만들어서 import하는 */
+/* 디자인 시작전에 공통적으로 선언 */
+
+
+.prod-info > h1{
+    font-weight:bold;
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #777;
+    padding: 10px;
+}
+
+.col-xs-12 {
+    overflow: hidden;
+}
+
+.img{
+    
+    float: left;}
+.prod-info{
+    
+    float: right;}
+.prod-info h1, h2, .prod-del{
+    width: 100%;
+}

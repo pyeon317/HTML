@@ -1,0 +1,65 @@
+/* @import url(reset.css); */ /* 공통부분 매번 적기 귀찮아서 파일 따로 만들어서 import하는 */
+/* 디자인 시작전에 공통적으로 선언 */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body, html {
+    font-family: 'Orbit', sans-serif;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+ul, li, ol, dd, dl {
+    list-style: none;
+}
+/* input, textarea, select, button {
+    
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    
+} *//* form-group의 체크박스가 나타나게 하기 위해 삭제 */
+
+.form-control {border-radius: 0;}
+.btn {border-radius: 0;}
+.form-control:focus{
+    border: #222;
+    box-shadow: none;
+}
+.my-title{
+    margin: 50px auto;
+    width: 200px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.my-join{
+    margin: 0 auto;
+    /* border: 1px solid #777; */
+    box-shadow: 0 8px 15px #777;
+    float: none;/* col이 float처리가 되어있어서 margin 가운데로 */
+    padding: 20px 30px;
+}
+
+.my-input{
+    width: 100%;
+    height: 30px;
+    padding: 15px;
+    border: 1px solid #777;
+}
+
+.my-input:focus{/* 입력하는동안 변화 */
+    outline: none;
+    border: 1px solid salmon;
+}
+
+.my-btn{
+    width: 100%;
+    padding: 10px;
+}

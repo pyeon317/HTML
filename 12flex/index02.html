@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        .container{
+            display: flex;
+            flex-direction: row;
+
+            justify-content: center;/* 주축에 따라서 정렬이 바뀜 */
+            /* space-between;/* 균등 간격  */
+            /* space-between;/* 양 끝으로 딱 붙이고 동일한 간격  */
+            
+            background-color: yellow;
+            padding: 20px;
+            height: 500px;
+        }
+        .container .item{
+            background-color: aqua;
+            margin: 10px;
+        }
+    </style>
+    
+    <div class="container">
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+    </div>
+    
+    <hr/>
+    
+    
+    <style>
+        .container2{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            /* 교차축 정렬 (2줄 이상일 때*/
+            align-content: flex-start;
+            align-content: flex-end;
+            align-content: center;
+            align-content: space-between;/* 양 끝 붙이고 균등간격 */
+            align-content: space-around;/* 균등 간격 */
+
+            
+            background-color: yellow;
+            padding: 20px;
+            height: 500px;
+        }
+        .container2 .item{
+            background-color: aqua;
+            margin: 10px;
+        }
+    </style>
+    
+    <div class="container2">
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+    </div>
+
+    <hr/>
+
+    <style>
+        
+        .container3{
+            display: flex;
+            
+            align-items: center;
+            justify-content: center;/* 주축에 따라서 정렬이 바뀜 */
+            /* space-between;/* 균등 간격  */
+            /* space-between;/* 양 끝으로 딱 붙이고 동일한 간격  */
+            
+            background-color: pink;
+            padding: 20px;
+            height: 500px;
+        }
+        .container3 .item{
+            background-color: aqua;
+            margin: 10px;
+        }
+    </style>
+    
+    <div class="container3">
+        <div class="item" style="height: 30px;">flex</div>
+        <div class="item">flex</div>
+        <div class="item">flex</div>
+    </div>
+
+
+
+
+    <div>
+        <video src="margin:0 auyo"></video>
+    </div>
+
+</body>
+</html>
